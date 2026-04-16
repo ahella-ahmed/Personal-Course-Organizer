@@ -37,19 +37,16 @@ nav {
     align-content: center;
     gap: 25px;
     background: #1a3d63;
-
-
 }
 
 
 
 nav a {
+    font-size: 14px;
     text-decoration: none;
     color: #fff;
     padding: 5px;
     transition: all 0.5s ease-in-out;
-        font-size: 14px;
-
 }
 
 nav a:hover {
@@ -58,64 +55,9 @@ nav a:hover {
     border-radius: 11px;
 }
 
-.Courses {
-    background: unset;
-}
 
-.Courses .cards {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
-.Courses .card {
-    width: 300px;
-    max-width: 100%;
-    background: #1a3d63;
-    border-radius: 12px;
-    padding: 20px;
-    overflow: hidden;
-    min-height: 285px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    transition: all 0.5s ease;
-}
 
-.Courses .card:hover {
-    scale: 1.05;
-}
-
-.Courses .card img {
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.Courses .card h2 {
-    color: #fff;
-    font-size: 20px;
-    padding: 5px 0;
-}
-
-.Courses .card button {
-    background: #fff;
-    border: unset;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.7s;
-    border-radius: 12px;
-    font-size: 16px;
-}
-
-.Courses .card button:hover {
-    background: #1a3d63;
-    scale: 1.05
-}
 
 .home {
 
@@ -147,6 +89,7 @@ nav a:hover {
 }
 
 form {
+
     width: 300px;
 }
 
@@ -172,8 +115,9 @@ textarea {
     background-color: #b3cfe5;
     font-size: 18px;
     font-weight: 600;
-    transform:  all 1s ease-in-out;
+    transform: all 1s ease-in-out;
     cursor: pointer;
+    width: 100%;
 
 }
 
@@ -182,4 +126,74 @@ textarea {
     background-color: #b3cfe5;
     scale: 1.1;
 
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+
+
+    /* background-image: url(./bg.jpeg);
+            width: 100wh;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover; */
+
+}
+
+.mycourses {
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    overflow-x: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    min-width: 600px;
+}
+
+thead {
+    background-color: #1a3d63;
+    color: white;
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+}
+
+td {
+    padding: 18px;
+    text-align: center;
+    color: #444;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fcff;
+}
+
+tbody tr:hover {
+    background-color: #ecf3f9;
+    transition: 0.3s;
 }
